@@ -9,5 +9,15 @@ body, div, p, h1, h2, h3, h4, h5, img {
 
 .header {
   border-bottom: 2px solid #fff;
-  height: 100px;
+  height: 82px;
 }
+
+.content {
+  background-color: #1b1b1b;
+  margin: 10px 20px 20px;
+}
+
+.content .top_nav {
+  margin-left: 580px;
+}
+
