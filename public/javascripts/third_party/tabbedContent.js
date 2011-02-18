@@ -1,6 +1,6 @@
 var TabbedContent = {
 	init: function() {
-		$(".tab_item").mouseover(function() {
+		$(".tab_item").click(function() {
 
 			var background = $(this).parent().find(".moving_bg");
 
