@@ -21,7 +21,7 @@ var TabbedContent = {
 		margin = margin * ($(obj).prevAll().size() - 1);
 		margin = margin * -1;
 
-		$(obj).parent().parent().find(".tabslider").stop().animate({
+    $(obj).parent().parent().find(".tabslider").stop().animate({
 			marginLeft: margin + "px"
 		}, {
 			duration: 300

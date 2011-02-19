@@ -1,16 +1,21 @@
+= javascript_include_tag "getTabbedContent"
 = javascript_include_tag "third_party/tabbedContent"
 .top_nav.tabbed_content
   .tabs
     .moving_bg
       \&nbsp;
-    %span.tab_item
+    %span.tab_item#about_me_tab
       About me
-    %span.tab_item
+    %span.tab_item#my_click_tab{ :controller => "homes", :action => "gallery" }
       My Clicks
-    %span.tab_item
+    %span.tab_item#blog_tab
       Blog
   .slide_content
     .tabslider
-      %ul
+      %ul.about_me_content
         %li
           = render :partial => "shared/about_me"
+      %ul.my_click_content
+        %li
+          "Hello"
+
