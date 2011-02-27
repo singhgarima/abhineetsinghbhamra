@@ -1,6 +1,10 @@
 class ImagesController < ApplicationController
   caches_page :show
 
+  def index
+    @images = Image.all
+  end
+
   def show
     if @image = Image.find_by_human_name(params[:file_name])
       send_data(
@@ -14,7 +18,11 @@ class ImagesController < ApplicationController
     end
   end
 
-  def attach
+  def new
+    @image = Image.new
+  end
+
+  def create
     redirect_to root_path and return if params[:attachment].blank?
     expire_page :action => :index
 

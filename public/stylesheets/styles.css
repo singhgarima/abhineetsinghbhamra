@@ -32,5 +32,33 @@ ul {
 }
 
 /* About Me */
-.about_me {
+.about_me_content {
+  height: 400px;
+}
+
+/* gallery */
+.gallery .photo_container {
+  background-color: #555;
+  float: left;
+  height: 250px;
+  margin: 30px 42px;
+  width: 200px;
+}
+
+.gallery .photo_frame {
+  background-color: #222;
+  height: 160px;
+  margin: 10px 10px 10px;
+  width: 180px;
+}
+
+.gallery .photo_container img {
+  height: 148px;
+  margin: 6px;
+  width: 168px;
+}
+
+.gallery .photo_container .photo_info {
+  color: #aaa;
+  margin: 0 8px;
 }

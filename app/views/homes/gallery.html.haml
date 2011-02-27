@@ -1,0 +1,11 @@
+= javascript_include_tag 'round_me'
+.gallery
+  - for image in Image.all
+    .photo_container.rounded_corner
+      .photo_frame.rounded_corner
+        = image_tag "/images/#{image.human_name}", :alt => image.qoute, :class => "rounded_corner"
+      %hr
+      .photo_info
+        %h4 Qoute
+        = image.qoute
+

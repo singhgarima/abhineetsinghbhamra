@@ -1,6 +1,3 @@
 class HomesController < ApplicationController
-
-  def gallery
-    render :text => "Yippie! success"
-  end
+  layout "application", :except => [:gallery]
 end

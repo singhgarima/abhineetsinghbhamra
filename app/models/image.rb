@@ -3,7 +3,7 @@ class Image < ActiveRecord::Base
   def uploaded_file=(incoming_file)
     self.name         = incoming_file.original_filename
     self.content_type = incoming_file.content_type
-    self.human_name   = self.name.gsub(/./, "_")
+    self.human_name   = self.name.gsub(/\./, "_")
     self.content      = incoming_file.read
   end
 

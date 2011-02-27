@@ -1,0 +1,10 @@
+.images, .images a {
+  color: white;
+  margin: 20px;
+}
+
+table, th, tr, td {
+  border: 1px solid white;
+  margin: 2px;
+  padding: 20px;
+}
