@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  caches_page :show
+  caches_page :show, :index
 
   def index
     @images = Image.all
