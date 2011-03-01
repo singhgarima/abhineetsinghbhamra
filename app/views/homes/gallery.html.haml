@@ -1,12 +1,4 @@
 = javascript_include_tag 'round_me'
 = javascript_include_tag 'lightbox'
 .gallery
-  - for image in Image.all
-    .photo_container.rounded_corner
-      .photo_frame.rounded_corner
-        = link_to image_tag("/images/#{image.human_name}", :alt => image.qoute, :id => "#{image.human_name}", :class => "rounded_corner"), "##{image.human_name}", :class => "lightbox_pop"
-      %hr
-      .photo_info
-        %h4 Qoute
-        = image.qoute
-
+  = render :partial => "shared/image_box", :collection => @images
