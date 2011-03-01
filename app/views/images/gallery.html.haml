@@ -1,0 +1,4 @@
+.images
+  .gallery
+    = render :partial => "shared/image_box", :collection => @images
+    = will_paginate @images
