@@ -4,6 +4,7 @@
     %tr
       %th Human Name
       %th Content type
+      %th Qoute
       %th Action
     - @images.try(:each) do |image|
       %tr
@@ -12,6 +13,8 @@
         %td
           = image.content_type
         %td
+          = image.qoute
+        %td.action
           = link_to 'Show', image_path(image.human_name)
   %br/
   %hr/

@@ -1,5 +1,13 @@
 .images, .images a {
   color: white;
+}
+
+.images a:hover {
+  background-color: #666;
+  color: #000;
+}
+
+.images, .images td.action a {
   margin: 20px;
 }
 
@@ -7,4 +15,8 @@ table, th, tr, td {
   border: 1px solid white;
   margin: 2px;
   padding: 20px;
+}
+
+.images .gallery {
+  margin:  5% 7%;
 }

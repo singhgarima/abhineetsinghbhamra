@@ -10,7 +10,7 @@
     = csrf_meta_tag
   %body
     .header
-      = image_tag "/images/name_logo/white_shadow_small.png"
+      = link_to image_tag("/images/name_logo/white_shadow_small.png"), root_path
     .content
       - if params[:controller] == "homes"
         = render :partial => "shared/top_nav"

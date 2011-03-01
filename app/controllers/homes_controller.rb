@@ -4,6 +4,6 @@ class HomesController < ApplicationController
   caches_page :gallery
 
   def gallery
-    @images = Image.all
+    @images = Image.order("created_at desc").limit(12)
   end
 end

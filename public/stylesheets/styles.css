@@ -35,7 +35,7 @@ ul {
   color: white;
 }
 
-..border {
+.border {
   border: 1px solid white;
 }
 
@@ -43,6 +43,9 @@ ul {
   border: 3px solid #666;
 }
 
+.block {
+  display: block;
+}
 
 /* About Me */
 .about_me_content {
@@ -75,3 +78,4 @@ ul {
   color: #aaa;
   margin: 0 8px;
 }
+

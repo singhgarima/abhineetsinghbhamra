@@ -1,6 +1,6 @@
 class Image < ActiveRecord::Base
   cattr_reader :per_page
-  @@per_page = 15
+  @@per_page = 12
 
   def uploaded_file=(incoming_file)
     self.name         = incoming_file.original_filename

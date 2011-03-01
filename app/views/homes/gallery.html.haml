@@ -1,4 +1,3 @@
-= javascript_include_tag 'round_me'
-= javascript_include_tag 'lightbox'
 .gallery
   = render :partial => "shared/image_box", :collection => @images
+  = link_to "See all ➜ ", images_gallery_path, :class => "right"

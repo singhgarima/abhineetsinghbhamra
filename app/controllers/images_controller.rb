@@ -1,9 +1,13 @@
 class ImagesController < ApplicationController
-  caches_page :show
+  caches_page :show, :gallery
   layout "application", :except => [:show, :create]
 
   def index
     @images = Image.all
+  end
+
+  def gallery
+    @images = Image.paginate :page => params[:page]
   end
 
   def show
@@ -26,6 +30,7 @@ class ImagesController < ApplicationController
   def create
     redirect_to root_path and return if params[:attachment].blank?
     expire_page(:controller => :homes, :action => :gallery)
+    expire_page(:controller => :images, :action => :gallery)
 
     @attachment               = Image.new
     @attachment.uploaded_file = params[:attachment]
