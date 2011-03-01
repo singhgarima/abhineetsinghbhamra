@@ -1,5 +1,6 @@
 class ImagesController < ApplicationController
   caches_page :show
+  layout "application", :except => [:show, :create]
 
   def index
     @images = Image.all
