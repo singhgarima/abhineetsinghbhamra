@@ -35,6 +35,15 @@ ul {
   color: white;
 }
 
+..border {
+  border: 1px solid white;
+}
+
+.border_grey {
+  border: 3px solid #666;
+}
+
+
 /* About Me */
 .about_me_content {
   height: 400px;
