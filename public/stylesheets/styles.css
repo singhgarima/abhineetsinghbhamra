@@ -31,6 +31,10 @@ ul {
   list-style: none;
 }
 
+.white {
+  color: white;
+}
+
 /* About Me */
 .about_me_content {
   height: 400px;
