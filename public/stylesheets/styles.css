@@ -17,6 +17,13 @@ body {
   padding-bottom: 20px;
 }
 
+.pagination {
+  clear: both;
+  background: #333;
+  padding: 20px;
+  text-align: center;
+}
+
 /*Generic */
 
 .left {
@@ -78,4 +85,3 @@ ul {
   color: #aaa;
   margin: 0 8px;
 }
-
