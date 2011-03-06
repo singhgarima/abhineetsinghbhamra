@@ -1,3 +1,5 @@
 $(document).ready(function(){
-  $(".lightbox_pop").fancybox();
+  $(".lightbox_pop").fancybox({
+    'titlePosition' 		: 'inside'
+  });
 });
