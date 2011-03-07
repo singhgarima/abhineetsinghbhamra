@@ -1,0 +1,22 @@
+.blogs.white
+  %h1 Listing blogs
+  %table
+    %tr
+      %th S. No.
+      %th Name
+      %th Created At
+      %th Actions
+    - @blogs.each_with_index do |blog, index|
+      %tr
+        %td
+          = index + 1
+        %td
+          = blog.name
+        %td
+          = blog.created_at
+        %td
+          = link_to 'Show', blog
+          = link_to 'Edit', edit_blog_path(blog)
+          = link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete
+  %br/
+  = link_to 'New Blog', new_blog_path

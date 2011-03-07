@@ -1,0 +1,9 @@
+.blogs.white
+  %p#notice= notice
+  %h2 Name
+  = @blog.name
+  %h3 Body
+  = @blog.body
+  = link_to 'Edit', edit_blog_path(@blog)
+  |
+  \#{link_to 'Back', blogs_path}

@@ -1,0 +1,9 @@
+.blog
+  %h2.name
+    = @blog.name
+    %hr/
+  %br/
+  .body.grey
+    = raw sanitize(simple_format(@blog.body), :tags => %w(br p) )
+  %hr/
+  %hr/
