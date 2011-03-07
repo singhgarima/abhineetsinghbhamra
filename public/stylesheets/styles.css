@@ -43,6 +43,10 @@ ul {
   color: white;
 }
 
+.grey {
+  color: #666;
+}
+
 .border {
   border: 1px solid white;
 }

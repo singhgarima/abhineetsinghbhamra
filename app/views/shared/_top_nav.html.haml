@@ -8,7 +8,7 @@
       About me
     %span.tab_item#my_click_tab{ :controller => "homes", :action => "gallery" }
       My Recent Clicks
-    %span.tab_item#blog_tab
+    %span.tab_item#blog_tab{ :controller => "homes", :action => "blog"}
       Blog
   .slide_content
     .tabslider
@@ -18,4 +18,6 @@
       %ul.my_click_content
         %li.white
           %h2 Please wait for page to load. IE might not be supported :):) ....
+      %ul.blog_content
+        %li.white
 

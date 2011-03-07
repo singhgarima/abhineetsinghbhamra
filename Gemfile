@@ -2,8 +2,10 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.4'
 gem 'haml'
+gem 'haml-rails'
 gem 'devise'
 gem 'will_paginate'
+gem 'formtastic'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
