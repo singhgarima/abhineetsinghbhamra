@@ -4,6 +4,10 @@ class BlogsController < ApplicationController
     @blogs = Blog.all
   end
 
+  def archive
+    @blogs = Blog.order("created_at desc").group_by{ |g| g.created_at.strftime("%B, %Y")}
+  end
+
   def show
     @blog = Blog.find(params[:id])
   end
@@ -27,7 +31,6 @@ class BlogsController < ApplicationController
 
   def update
     @blog = Blog.find(params[:id])
-
     if @blog.update_attributes(params[:blog])
       redirect_to(@blog, :notice => 'Blog was successfully updated.')
     else

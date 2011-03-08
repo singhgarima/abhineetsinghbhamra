@@ -1,0 +1,9 @@
+.blogs.white
+  %h1 Archives
+  - @blogs.each do |key, value|
+    %h2
+      = key
+    %ul
+      - value.each do |blog|
+        %li
+          = link_to blog.name, blog_path(blog)

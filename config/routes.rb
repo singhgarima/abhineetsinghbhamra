@@ -1,4 +1,6 @@
 Abhineetsinghbhamra::Application.routes.draw do
+
+  match "/blogs/archive" => "blogs#archive"
   resources :blogs
 
   match "/images/gallery" => "images#gallery", :as => "images_gallery"

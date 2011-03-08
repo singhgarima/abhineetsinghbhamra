@@ -7,3 +7,5 @@
     = raw sanitize(simple_format(@blog.body), :tags => %w(br p) )
   %hr/
   %hr/
+  .see_all.right.white
+    = link_to "See All", blogs_archive_path
