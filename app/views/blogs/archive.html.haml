@@ -1,9 +1,15 @@
 .blogs.white
   %h1 Archives
+  %hr/
+  %br/
   - @blogs.each do |key, value|
     %h2
-      = key
+      = "★ #{key}"
     %ul
       - value.each do |blog|
         %li
+          ✎
           = link_to blog.name, blog_path(blog)
+  %br/
+  %hr/
+  %hr/

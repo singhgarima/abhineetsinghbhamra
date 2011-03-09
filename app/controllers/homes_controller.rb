@@ -4,7 +4,7 @@ class HomesController < ApplicationController
   caches_page :gallery
 
   def gallery
-    @images = Image.order("created_at desc").limit(9)
+    @images = Image.order("created_at desc").limit(6)
   end
 
   def blog
