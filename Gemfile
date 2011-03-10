@@ -6,6 +6,9 @@ gem 'haml-rails'
 gem 'devise'
 gem 'will_paginate'
 gem 'formtastic'
+gem 'devise'
+gem 'hpricot'
+gem 'ruby_parser'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

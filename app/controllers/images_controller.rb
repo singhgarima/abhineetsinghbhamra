@@ -1,7 +1,7 @@
 class ImagesController < ApplicationController
   caches_page :show, :gallery
   layout "application", :except => [:show, :create]
-
+  before_filter :authenticate_user!, :only => [:new, :create, :index]
   def index
     @images = Image.all
   end

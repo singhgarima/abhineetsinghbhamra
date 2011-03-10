@@ -1,5 +1,7 @@
 Abhineetsinghbhamra::Application.routes.draw do
 
+  devise_for :users, :controllers => { :registrations => "users/registrations" }
+
   match "/blogs/archive" => "blogs#archive"
   resources :blogs
 
