@@ -68,7 +68,7 @@ ul {
 .gallery .photo_container {
   background-color: #555;
   float: left;
-  height: 250px;
+  height: 270px;
   margin: 30px 42px;
   width: 200px;
 }
@@ -88,5 +88,5 @@ ul {
 
 .gallery .photo_container .photo_info {
   color: #aaa;
-  margin: 0 8px;
+  margin: 2px 8px;
 }
