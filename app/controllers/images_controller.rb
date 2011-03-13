@@ -7,7 +7,7 @@ class ImagesController < ApplicationController
   end
 
   def gallery
-    @images = Image.paginate :page => params[:page]
+    @images = Image.paginate :page => params[:page], :order => "created_at DESC"
   end
 
   def show
