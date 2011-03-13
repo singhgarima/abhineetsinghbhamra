@@ -1,5 +1,5 @@
 class Image < ActiveRecord::Base
-  validates_presence_of :quote
+  validates_presence_of :qoute
   cattr_reader :per_page
   @@per_page = 12
 
