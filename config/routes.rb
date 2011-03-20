@@ -4,8 +4,10 @@ Abhineetsinghbhamra::Application.routes.draw do
 
   match "/blogs/archive" => "blogs#archive"
   resources :blogs
+  resources :ext_images, :only => [ :create ]
 
   match "/images/gallery" => "images#gallery", :as => "images_gallery"
+  match "/ext_images/gallery" => "ext_images#gallery", :as => "ext_images_gallery"
   resources :images, :except => :show
   match "/images/:file_name" => "images#show"
   match "/art/:file_name" => "images#art"

@@ -1,0 +1,22 @@
+= form_for @ext_image do |f|
+  - if @ext_image.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@ext_image.errors.count, "error")
+        prohibited this ext image from being saved:
+      %ul
+        - @ext_image.errors.full_messages.each do |msg|
+          %li= msg
+  %b Add more pics
+  %ul
+    %li
+      = f.label :name
+      = f.text_field :name
+    %li
+      = f.label :url
+      = f.text_field :url
+    %li
+      = f.label :qoute
+      = f.text_field :qoute
+    %li
+      = f.submit "Send Attachment"

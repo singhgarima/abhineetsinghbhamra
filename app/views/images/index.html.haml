@@ -9,13 +9,13 @@
     - @images.try(:each) do |image|
       %tr
         %td
-          = image.human_name
+          = image.human_name rescue image.name
         %td
-          = image.content_type
+          = image.content_type rescue "external url"
         %td
           = image.qoute
         %td.action
-          = link_to 'Show', image_path(image.human_name)
+          = link_to 'Show', (image_path(image.human_name) rescue image.url)
   %br/
   %hr/
   = link_to 'New Image', new_image_path

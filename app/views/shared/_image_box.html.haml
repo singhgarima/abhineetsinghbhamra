@@ -2,7 +2,9 @@
 
 .photo_container.rounded_corner
   .photo_frame.rounded_corner
-    = link_to image_tag("/images/#{image_box.human_name}", :alt => image_box.qoute, :id => "#{image_box.human_name}", :class => "rounded_corner"), "##{image_box.human_name}", :class => "lightbox_pop", :title => image_box.qoute
+    - image_url = "/images/#{image_box.human_name}" rescue image_box.url
+    - image_id  = "#{image_box.id}_#{image_box.class.name}"
+    = link_to image_tag(image_url, :alt => image_box.qoute, :id => image_id , :class => "rounded_corner"), "##{image_id}", :class => "lightbox_pop", :title => image_box.qoute
     %hr
     .photo_info
       %h4 Qoute

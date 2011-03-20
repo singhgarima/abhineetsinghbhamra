@@ -5,6 +5,8 @@ class ImagesController < ApplicationController
 
   def index
     @images = Image.all
+    ext_images = ExtImage.all
+    @images += ext_images
   end
 
   def gallery
@@ -21,6 +23,7 @@ class ImagesController < ApplicationController
 
   def new
     @image = Image.new
+    @ext_image = ExtImage.new
   end
 
   def create

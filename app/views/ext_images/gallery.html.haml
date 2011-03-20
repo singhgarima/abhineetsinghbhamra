@@ -1,7 +1,7 @@
 .images
-  .right.gallery_link
+  .right
     %h2
-      = link_to "Gallery From Sources(Facebook, flickr, etc)", ext_images_gallery_path
+      = link_to "Gallery for images", images_gallery_path
   .gallery
     = render :partial => "shared/image_box", :collection => @images
     = will_paginate @images

@@ -1,3 +1,8 @@
-%h1 New image
-= render 'form'
-= link_to 'Back', images_path
+.white
+  %h1 New image
+  = render :partial => 'images/form'
+  = link_to 'Back', images_path
+  %hr/
+  %hr/
+  %h1 New External Url
+  = render :partial => "images/ext_image_form"
