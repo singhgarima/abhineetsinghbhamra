@@ -1,5 +1,6 @@
 = javascript_include_tag "round_me"
 .gallery.center
-  = image_tag "#{@image.human_name}", :class => "grey_container rounded_corner"
+  - url = @image.human_name rescue @image.url
+  = image_tag url, :class => "grey_container rounded_corner"
   .photo_info.white
     = @image.qoute
