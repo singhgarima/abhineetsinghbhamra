@@ -10,7 +10,9 @@ Abhineetsinghbhamra::Application.routes.draw do
   match "/ext_images/gallery" => "ext_images#gallery", :as => "ext_images_gallery"
   resources :images, :except => :show
   match "/images/:file_name" => "images#show"
-  match "/art/:file_name" => "images#art"
+
+  match "/art/:file_name" => "images#art", :as => "art"
+  match "/ext_art/:id" => "ext_images#art", :as => "ext_art"
 
   match "homes/gallery" => "homes#gallery"
   match "homes/blog" => "homes#blog"

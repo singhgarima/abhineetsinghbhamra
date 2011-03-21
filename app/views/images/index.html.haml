@@ -5,6 +5,7 @@
       %th Human Name
       %th Content type
       %th Qoute
+      %th Image Url
       %th Action
     - @images.try(:each) do |image|
       %tr
@@ -14,6 +15,9 @@
           = image.content_type rescue "external url"
         %td
           = image.qoute
+        %td
+          - path = art_path(image.human_name) rescue ext_art_path(image.id)
+          = link_to "image-url", path
         %td.action
           = link_to 'Show', (image_path(image.human_name) rescue image.url)
   %br/
