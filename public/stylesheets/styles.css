@@ -27,6 +27,10 @@ body {
 
 /*Generic */
 
+.large {
+  font-size: 30px;
+}
+
 .left {
   float: left
 }
@@ -63,9 +67,17 @@ ul {
   display: block;
 }
 
+.yellow {
+  color: #c8c132;
+}
+
 /* About Me */
 .about_me_content {
   height: 400px;
+}
+
+.about_info {
+  width: 500px;
 }
 
 /* gallery */
