@@ -1,6 +1,6 @@
-.images
-  .right
-    %h2
+.images.gallery_container
+  .image_header
+    .gallery_link.right
       = link_to "Gallery for images", images_gallery_path
   .gallery
     = render :partial => "shared/image_box", :collection => @images
