@@ -7,7 +7,7 @@ body {
   height: 82px;
 }
 
-.content {
+.content, .footer {
   background-color: #1b1b1b;
   margin: 2%;
   width: 96%;
@@ -73,7 +73,7 @@ ul {
 
 /* About Me */
 .about_me_content {
-  height: 400px;
+  height: 450px;
 }
 
 .about_info {
@@ -112,4 +112,23 @@ ul {
   border: 3px solid #666;
   padding: 10px;
   width: auto;
+}
+
+/* Footer */
+.footer {
+  padding: 1%;
+}
+
+.footer .information {
+  height: 75px;
+  margin-left: 30%;
+  margin-bottom: 1%;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer li {
+  padding: 1px;
 }
