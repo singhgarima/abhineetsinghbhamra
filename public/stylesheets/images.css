@@ -18,6 +18,10 @@ table, th, tr, td {
 }
 
 .images .gallery {
-  margin:  5% 7%;
+  margin:  0% 7% 5%;
+}
+
+.images .image_header {
+  height: 20px;
 }
 
