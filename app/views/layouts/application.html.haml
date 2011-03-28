@@ -9,6 +9,10 @@
     = javascript_include_tag "third_party/jquery.corner", "application"
     = javascript_include_tag "../fancybox/jquery.fancybox-1.3.4"
     = csrf_meta_tag
+    %meta{'NAME' => 'http-equiv', :content => 'text/html'}/
+    %meta{'NAME' => 'description', :content => 'A site by Abhineet Singh Bhamra, for his experiences with photography.'}/
+    %meta{'NAME' => 'keywords', :content => 'abhineet,singh,bhamra,photographs,photography,blog,recent'}/
+    %meta{'NAME' => "ROBOTS",  :content => "all"}/
   %body
     .header
       = link_to image_tag("/images/name_logo/white_shadow_small.png"), root_path
@@ -17,3 +21,14 @@
         = render :partial => "shared/top_nav"
       = yield
     .footer
+
+:javascript
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22343101-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
