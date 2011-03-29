@@ -5,6 +5,12 @@
     = image_tag url, :class => "grey_container rounded_corner"
     .photo_info.white
       = @image.qoute
-  .facebook_like
+  .arts_footer
     .right
-      %iframe{ :src => "http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fabhineetbhamrablog.heroku.com%2F", :scrolling => "no", :frameborder => "0", :style => "height: 62px; width: 100%", :allowTransparency => "true"}
+      .facebook_like
+        %iframe{ :src => "http://www.facebook.com/plugins/like.php?href=#{request.url}", :scrolling => "no", :frameborder => "0", :style => "height: 62px; width: 100%", :allowTransparency => "true"}
+      %br/
+      .gallery_links
+        = link_to "Gallery From Sources(Facebook, flickr, etc)", ext_images_gallery_path, :class => "grey"
+        %br/
+        = link_to "Gallery From Uploads", images_gallery_path, :class => "grey"
