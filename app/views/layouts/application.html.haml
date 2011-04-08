@@ -18,6 +18,8 @@
       = link_to image_tag("/images/name_logo/white_shadow_small.png"), root_path
     .content
       - if params[:controller] == "homes"
+        .facebook_like_box.left
+          %iframe{:allowtransparency => "true", :frameborder => "1", :scrolling => "no", :src => "http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAbhineet-Singh-Bhamra-Photography-Website%2F217129098302730&amp;width=270&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;height=395", :style => "border:none; overflow:hidden; width:270px; height:395px;"}
         = render :partial => "shared/top_nav"
       = yield
     .footer
