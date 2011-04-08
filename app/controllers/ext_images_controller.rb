@@ -14,4 +14,5 @@ class ExtImagesController < ApplicationController
     @image = ExtImage.find_by_id(params[:id])
     render :template => "images/art"
   end
+
 end
