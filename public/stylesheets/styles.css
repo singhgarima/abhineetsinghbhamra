@@ -78,11 +78,15 @@ ul {
 
 /* About Me */
 .about_me_content {
-  height: 450px;
+  height: 500px;
 }
 
-.about_info {
+.about_info, .about_info ul {
   width: 500px;
+}
+
+.about_info ul li.last {
+  margin-top: 10px;
 }
 
 /* gallery */
