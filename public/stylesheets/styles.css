@@ -1,14 +1,14 @@
 body {
   background-color: #111;
+  background: url("../images/bg_bike.jpg") repeat scroll 0 0 #111111;
 }
 
 .header {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #2D0A04;
   height: 82px;
 }
 
 .content, .footer {
-  background-color: #1b1b1b;
   margin: 2%;
   width: 96%;
 }
@@ -20,13 +20,14 @@ body {
 
 .pagination {
   clear: both;
-  background: #333;
+  background: #2D0A04;
   padding: 20px;
   text-align: center;
 }
 
 .facebook_like_box {
   border: 4px solid #666666;
+  display: none;
   margin: 62px 0 0 50px;
 }
 
@@ -56,6 +57,10 @@ ul {
   color: white;
 }
 
+.site_font_colour {
+  color: #2D0A04;
+}
+
 .grey {
   color: #666;
 }
@@ -68,6 +73,10 @@ ul {
   border: 3px solid #666;
 }
 
+.border_brown {
+  border: 3px solid #2D0A04;
+}
+
 .block {
   display: block;
 }
@@ -76,9 +85,18 @@ ul {
   color: #c8c132;
 }
 
+.text_bk_layer {
+  background: none repeat scroll 0 0 #170A04;
+  opacity: 0.7;
+}
+
 /* About Me */
 .about_me_content {
   height: 500px;
+}
+
+.about_info {
+  padding: 12px;
 }
 
 .about_info, .about_info ul {
@@ -91,7 +109,7 @@ ul {
 
 /* gallery */
 .gallery .photo_container {
-  background-color: #555;
+  background-color: #AEAE82;
   float: left;
   height: 270px;
   margin: 20px 42px;
@@ -99,7 +117,7 @@ ul {
 }
 
 .gallery .photo_frame {
-  background-color: #222;
+  background-color: #100A04;
   height: 160px;
   margin: 10px 10px 10px;
   width: 180px;
@@ -112,7 +130,7 @@ ul {
 }
 
 .gallery .photo_container .photo_info {
-  color: #aaa;
+  color: #2D0A04;
   margin: 2px 8px;
 }
 

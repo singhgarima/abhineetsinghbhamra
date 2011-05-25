@@ -1,9 +1,9 @@
-.blog
+.blog.text_bk_layer
   %h2.name
     = @blog.name
     %hr/
   %br/
-  .body.grey
+  .body
     = raw sanitize(simple_format(@blog.body), :tags => %w(br p) )
   %hr/
   %hr/

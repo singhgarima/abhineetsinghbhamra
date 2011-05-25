@@ -6,6 +6,10 @@
   color: white;
 }
 
+.images .gallery_link a {
+  color: #2D0A04;
+}
+
 .images a:hover {
   background-color: #666;
   color: #000;
@@ -32,4 +36,8 @@ table, th, tr, td {
 .arts .arts_footer {
   height: 130px;
   margin: 2px 100px 0 0;
+}
+
+.images_internal {
+  padding: 20px;
 }

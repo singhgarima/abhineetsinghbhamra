@@ -8,32 +8,31 @@
 }
 
 .tabs .moving_bg {
+	background-color: #2D0A04;
 	padding: 15px;
-	background-color:#666;
-	background-image:url(../../images/arrow_down_grey.png);
 	position: absolute;
-	width: 125px;
+	width: 135px;
 	z-index: 190;
 	left: 0;
-	padding-bottom: 29px;
 	background-position: bottom left;
 	background-repeat: no-repeat;
 }
 
 .tabs .tab_item {
+	color: #6F3F11;
+	cursor: pointer;
 	display: block;
 	float: left;
+  font-size: 16px;
 	padding: 15px;
-	width: 125px;
-	color: #ffffff;
+	position: relative;
+	width: 135px;
 	text-align: center;
 	z-index: 200;
-	position: relative;
-	cursor: pointer;
 }
 
 .tabbed_content .slide_content {
-  border: 4px solid #666;
+  border: 4px solid #2D0A04;
   margin-left: -200px;
 	overflow: hidden;
 	padding: 20px 0 20px 20px;

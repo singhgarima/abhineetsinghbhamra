@@ -1,14 +1,15 @@
 .blogs {
   margin: 20px;
+  padding: 20px;
 }
 
 .blogs a {
   text-decoration: none;
-  color: #666;
+  color: #ddd;
 }
 
 .blogs a:hover {
-  background-color: #666;
+  background-color: #ddd;
   color: #000;
 }
 
@@ -18,4 +19,8 @@
 
 .blogs li {
   margin-left: 10px;
+}
+
+.blog {
+  padding: 30px;
 }
