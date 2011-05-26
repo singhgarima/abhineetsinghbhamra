@@ -10,8 +10,8 @@ var getTabbedContent = {
   },
 
   getContent: function(obj, controller, action) {
-    var class       = obj.attr("id").replace("_tab", "_content");
-    var content_box = $("ul." + class + " li");
+    var class_name  = obj.attr("id").replace("_tab", "_content");
+    var content_box = $("ul." + class_name + " li");
     content_box.load("/"+controller+"/"+action);
   }
 }
