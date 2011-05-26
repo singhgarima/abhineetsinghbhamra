@@ -1,6 +1,6 @@
 body {
   background-color: #111;
-  background: url("../images/bg_bike.jpg") repeat scroll 0 0 #111111;
+  background: url("../images/bg_bike.jpg") no-repeat scroll 0 0 #2D0A04;
 }
 
 .header {
