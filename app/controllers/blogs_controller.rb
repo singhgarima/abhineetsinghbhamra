@@ -23,6 +23,7 @@ class BlogsController < ApplicationController
   def create
     @blog = Blog.new(params[:blog])
     if @blog.save
+      expire_page(:controller => :homes, :action => :gallery)
       redirect_to(@blog, :notice => 'Blog was successfully created.')
     else
       render :action => "new"

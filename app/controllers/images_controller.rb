@@ -28,7 +28,6 @@ class ImagesController < ApplicationController
 
   def create
     redirect_to root_path and return if params[:attachment].blank?
-    expire_page(:controller => :homes, :action => :gallery)
     expire_page(:controller => :images, :action => :gallery)
 
     @attachment               = Image.new

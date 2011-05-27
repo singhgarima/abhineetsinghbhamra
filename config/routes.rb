@@ -17,7 +17,6 @@ Abhineetsinghbhamra::Application.routes.draw do
   match "homes/social" => "homes#social"
   match "homes/feedback" => "homes#feedback"
   match "homes/about_me" => "homes#about_me"
-  match "homes/gallery" => "homes#gallery"
   match "homes/blog/:id" => "homes#blog", :as => "homes_blog"
 
   root :to => "homes#index"
