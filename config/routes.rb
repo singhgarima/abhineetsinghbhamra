@@ -14,8 +14,11 @@ Abhineetsinghbhamra::Application.routes.draw do
   match "/art/:file_name" => "images#art", :as => "art"
   match "/ext_art/:id" => "ext_images#art", :as => "ext_art"
 
+  match "homes/social" => "homes#social"
+  match "homes/feedback" => "homes#feedback"
+  match "homes/about_me" => "homes#about_me"
   match "homes/gallery" => "homes#gallery"
-  match "homes/blog" => "homes#blog"
+  match "homes/blog/:id" => "homes#blog", :as => "homes_blog"
 
   root :to => "homes#index"
 end

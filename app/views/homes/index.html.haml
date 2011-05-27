@@ -1,0 +1,29 @@
+= javascript_include_tag "home"
+.homes
+  #menuWrapper.menuWrapper.bg1
+    %ul#menu.menu
+      %li.bg1{:style => "background-position:0px 0px;"}
+        %a#bg1{:href => "#"} My Passion
+        %ul.sub1{:style => "background-position:0px 0;"}
+          %li
+            = link_to "★ Picture Gallery 1 ★ ", ext_images_gallery_path
+          %li
+            = link_to "★ Picture Gallery 2 ★ ", images_gallery_path
+      %li.bg1{:style => "background-position:-266px 0;"}
+        %a#bg2{:href => "#"} About me
+        %ul.sub2{:style => "background-position:-266px 0;"}
+          %li
+            = link_to "My Social Networks", homes_social_path
+          %li
+            = link_to "My Story", homes_about_me_path
+          %li
+            = link_to "Do you like my work", homes_feedback_path
+      %li.last.bg1{:style => "background-position:-532px 0px;"}
+        %a#bg3{:href => "#"} Blogs
+        %ul.sub3{:style => "background-position:-266px 0;"}
+          %li
+            = link_to @blogs[0].name.truncate(30), homes_blog_path(@blogs[0].id)
+          %li
+            = link_to @blogs[1].name.truncate(30), homes_blog_path(@blogs[1].id)
+          %li
+            = link_to @blogs[2].name.truncate(30), homes_blog_path(@blogs[2].id)

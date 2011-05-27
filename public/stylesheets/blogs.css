@@ -21,6 +21,7 @@
   margin-left: 10px;
 }
 
-.blog {
+.blog, .blogs {
+  margin: 0 28%;
   padding: 30px;
 }

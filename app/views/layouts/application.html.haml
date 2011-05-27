@@ -3,11 +3,12 @@
   %head
     %title Abhineet Singh Bhamra
     %link(rel="icon" type="image/png" href="/images/favicon.png")
-    = stylesheet_link_tag "third_party/reset", "third_party/tabbedContent", "../fancybox/jquery.fancybox-1.3.4"
+    = stylesheet_link_tag "third_party/reset", "../fancybox/jquery.fancybox-1.3.4"
     = stylesheet_link_tag :all
     = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"
-    = javascript_include_tag "third_party/jquery.corner", "application"
+    = javascript_include_tag "third_party/jquery.corner", "application", "third_party/jquery.bgpos.js"
     = javascript_include_tag "../fancybox/jquery.fancybox-1.3.4"
+    = javascript_include_tag 'round_me', 'lightbox'
     = csrf_meta_tag
     %meta{'NAME' => 'http-equiv', :content => 'text/html'}/
     %meta{'NAME' => 'description', :content => 'A site by Abhineet Singh Bhamra, for his experiences with photography.'}/
@@ -15,12 +16,9 @@
     %meta{'NAME' => "ROBOTS",  :content => "all"}/
   %body
     .header
-      = link_to image_tag("/images/name_logo/brown_shadow_small.png"), root_path
-    .content
-      - if params[:controller] == "homes"
-        .facebook_like_box.left
-          %iframe{:allowtransparency => "true", :frameborder => "0", :scrolling => "no", :src => "http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAbhineet-Singh-Bhamra-Photography-Website%2F217129098302730&amp;width=300&amp;colorscheme=dark&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=364", :style => "border:none;overflow:hidden;width:300px;height:364px;"}
-        = render :partial => "shared/top_nav"
+      .center
+        = link_to image_tag("/images/name_logo/name_logo.png"), root_path
+    .content.center.white
       = yield
     .footer
 

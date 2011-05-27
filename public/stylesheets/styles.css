@@ -1,16 +1,15 @@
 body {
-  background-color: #111;
-  background: url("../images/bg_bike.jpg") no-repeat scroll 0 0 #2D0A04;
+  background-color: #000;
+  /* background: url("../images/bg_bike.jpg") no-repeat scroll 0 0 #2D0A04;*/
 }
 
 .header {
-  border-bottom: 2px solid #2D0A04;
+  /* border-bottom: 2px solid #2D0A04;*/
   height: 82px;
 }
 
 .content, .footer {
-  margin: 2%;
-  width: 96%;
+  margin-top: 40px;
 }
 
 .content .top_nav {
@@ -23,12 +22,6 @@ body {
   background: #2D0A04;
   padding: 20px;
   text-align: center;
-}
-
-.facebook_like_box {
-  border: 4px solid #666666;
-  display: none;
-  margin: 62px 0 0 50px;
 }
 
 /*Generic */
@@ -86,25 +79,24 @@ ul {
 }
 
 .text_bk_layer {
-  background: none repeat scroll 0 0 #170A04;
-  opacity: 0.7;
+  background: none repeat scroll 0 0 #0D0F3F;
+  filter:alpha(opacity=85);
+  -moz-opacity:0.85;
+  opacity: 0.85;
 }
 
 /* About Me */
-.about_me_content {
-  height: 500px;
+.about_me {
+  margin: 20px 28%;
+  padding: 20px;
 }
 
 .about_info {
-  padding: 12px;
+  text-align: left;
 }
 
-.about_info, .about_info ul {
-  width: 500px;
-}
-
-.about_info ul li.last {
-  margin-top: 10px;
+.about_info a {
+  color: white;
 }
 
 /* gallery */
@@ -141,21 +133,14 @@ ul {
   width: auto;
 }
 
-/* Footer */
-.footer {
-  padding: 1%;
+/* Social */
+
+.social {
+  margin: 20px 28%;
+  padding: 20px;
+  /* width: 500px;*/
 }
 
-.footer .information {
-  height: 75px;
-  margin-left: 30%;
-  margin-bottom: 1%;
-}
-
-.footer a:hover {
-  color: white;
-}
-
-.footer li {
-  padding: 1px;
+.content .social iframe {
+  margin-top: 10px;
 }
