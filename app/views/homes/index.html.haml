@@ -21,9 +21,6 @@
       %li.last.bg1{:style => "background-position:-532px 0px;"}
         %a#bg3{:href => "#"} Blogs
         %ul.sub3{:style => "background-position:-266px 0;"}
-          %li
-            = link_to @blogs[0].name.truncate(30), homes_blog_path(@blogs[0].id)
-          %li
-            = link_to @blogs[1].name.truncate(30), homes_blog_path(@blogs[1].id)
-          %li
-            = link_to @blogs[2].name.truncate(30), homes_blog_path(@blogs[2].id)
+          - @blogs.each do |blog|
+            %li
+              = link_to blog.name.truncate(30), homes_blog_path(blog.id)
