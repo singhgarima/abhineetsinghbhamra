@@ -74,6 +74,10 @@ ul {
   display: block;
 }
 
+.hide {
+  display: none;
+}
+
 .yellow {
   color: #c8c132;
 }

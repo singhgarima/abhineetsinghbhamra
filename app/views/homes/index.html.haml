@@ -1,5 +1,10 @@
-= javascript_include_tag "home"
+= javascript_include_tag "home", 'lightbox'
 .homes
+  .facebook_likes
+    = link_to image_tag("facebook.png"), "#facebook_website_box", :class => "lightbox_pop"
+    .hide
+      #facebook_website_box
+        = render :partial => "shared/facebook_website"
   #menuWrapper.menuWrapper.bg1
     %ul#menu.menu
       %li.bg1{:style => "background-position:0px 0px;"}
@@ -24,3 +29,4 @@
           - @blogs.each do |blog|
             %li
               = link_to blog.name.truncate(30), homes_blog_path(blog.id)
+

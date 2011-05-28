@@ -1,3 +1,11 @@
+.homes .facebook_likes {
+  float: left;
+  margin-left: -16px;
+}
+
+
+/*menu */
+
 .menuWrapper{
     font-family: "Trebuchet MS", Arial, sans-serif;;
     font-size: 15px;
