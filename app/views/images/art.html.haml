@@ -5,6 +5,11 @@
     = image_tag url, :class => "grey_container rounded_corner"
     .photo_info.white
       = @image.qoute
+      %br/
+      %hr/
+      #fb-root
+      %script{:src => "http://connect.facebook.net/en_US/all.js#xfbml=1"}
+      %fb:comments{:colorscheme => "dark", :href => art_url(@image.human_name), :num_posts => "5", :width => "500"}
   .arts_footer
     .right
       .facebook_like
