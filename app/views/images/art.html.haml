@@ -9,7 +9,8 @@
       %hr/
       #fb-root
       %script{:src => "http://connect.facebook.net/en_US/all.js#xfbml=1"}
-      %fb:comments{:colorscheme => "dark", :href => art_url(@image.human_name), :num_posts => "5", :width => "500"}
+      - anchor_link = @image.get_art_path
+      %fb:comments{:colorscheme => "dark", :href => send(anchor_link[0], anchor_link[1]), :num_posts => "5", :width => "500"}
   .arts_footer
     .right
       .facebook_like

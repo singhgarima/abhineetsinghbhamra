@@ -6,8 +6,8 @@
     - image_id  = "#{image_box.id}_#{image_box.class.name}"
     = link_to image_tag(image_url, :alt => image_box.qoute, :id => image_id , :class => "rounded_corner"), "##{image_id}", :class => "lightbox_pop", :title => image_box.qoute
     %hr
-    - image_filename = image_box.human_name rescue image_box.id
-    %a{:href => art_path(image_filename)}
+    - anchor_ref = image_box.get_art_path
+    %a{:href => send(anchor_ref[0], anchor_ref[1])}
       .photo_info
         %h4 Quote
         = image_box.qoute

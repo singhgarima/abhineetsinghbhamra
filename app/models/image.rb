@@ -14,6 +14,10 @@ class Image < ActiveRecord::Base
     write_attribute("name", sanitize_filename(new_filename))
   end
 
+  def get_art_path
+    ["art_path", human_name]
+  end
+
   private
   def sanitize_filename(filename)
     #get only the filename, not the whole path (from IE)
