@@ -7,7 +7,7 @@
     = link_to image_tag(image_url, :alt => image_box.qoute, :id => image_id , :class => "rounded_corner"), "##{image_id}", :class => "lightbox_pop", :title => image_box.qoute
     %hr
     - anchor_ref = image_box.get_art_path
-    %a{:href => send(anchor_ref[0], anchor_ref[1])}
+    %a{:href => send(anchor_ref[0], anchor_ref[1]), :class => "photo_detail_link", :alt => "See details"}
       .photo_info
         %h4 Quote
         = image_box.qoute

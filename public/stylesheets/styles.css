@@ -130,6 +130,10 @@ ul {
   margin: 2px 8px;
 }
 
+.gallery .photo_container .photo_detail_link {
+  text-decoration: none;
+}
+
 /* Container */
 .grey_container {
   border: 3px solid #666;
